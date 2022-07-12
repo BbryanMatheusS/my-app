@@ -22,11 +22,11 @@ const Navbar = ({DataPokemon}) => {
  
   
   async function pesquisarPokemon (){
-    setPesquisar(DataPokemon.find(name => name === Pesquisa))
+    setPesquisar(DataPokemon.find(name => name === Pesquisa.toLowerCase()))
 
-    if(pesquisar !== undefined){
+    if(pesquisar!== undefined){
       const poke = async () => {
-        const {data} = await api.get(`/pokemon/${Pesquisa}`)
+        const {data} = await api.get(`/pokemon/${Pesquisa.toLowerCase()}`)
         const dados = {
           id : data.id,
           name : data.name,
@@ -38,12 +38,14 @@ const Navbar = ({DataPokemon}) => {
       }
       await poke()
       handleClickOpen()
-            
+
     }else{
-      console.log("este pokemon nao existe")
+      alert("este pokemon nao existe")
     }    
   }
+  
 
+  
   console.log(DadosDoPokemon)
 
   const [Popup, setPopup] = useState(false);
