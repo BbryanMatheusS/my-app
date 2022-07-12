@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import './index.css';
 
 import { GoSearch } from 'react-icons/go';
@@ -21,7 +21,7 @@ const Navbar = ({DataPokemon}) => {
 
  
   
-  function pesquisarPokemon (){
+  async function pesquisarPokemon (){
     setPesquisar(DataPokemon.find(name => name === Pesquisa))
 
     if(pesquisar !== undefined){
@@ -31,14 +31,14 @@ const Navbar = ({DataPokemon}) => {
           id : data.id,
           name : data.name,
           type : data.types.map(type => type.type.name),
-          Moves : data.moves.map(move => move.move.name)
+          Moves : data.moves.map(move => move.move.name),
+          Foto : data.sprites.other.home.front_default
         }
         setDadosDoPokemon(dados)        
       }
-      poke()
+      await poke()
       handleClickOpen()
-
-      
+            
     }else{
       console.log("este pokemon nao existe")
     }    
@@ -90,7 +90,10 @@ const Navbar = ({DataPokemon}) => {
           <button onClick={closePopup}>close</button>
         </div>
         <div className="popup__body">
-          <h2>Dados do pokemon</h2>
+          <div className="popup_imagem-dados">
+            <img src={DadosDoPokemon.Foto} alt="" />
+            <h2>Dados do pokemon</h2>
+          </div>
           <p>Type:{DadosDoPokemon?DadosDoPokemon.type.map(dado =>  (` ${dado},`)):"Tipos do pokemon"}</p>
           <p>Habilidades:{DadosDoPokemon?DadosDoPokemon.Moves.map(dado =>  (` ${dado},`)):"Habilidades do pokemon"}</p>
           
