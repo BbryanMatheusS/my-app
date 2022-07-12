@@ -1,0 +1,52 @@
+.logo-bar{
+  background-color: #F2F2F2;
+}
+
+.logo-bar__content {    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 6rem ;
+  }
+
+  .logo-bar__content h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-bar__content p {
+    display:none;
+  }
+  
+  .logo-bar__content__marcas {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo-bar__content__marcas li {
+    padding: 1rem;
+  }
+
+  @media (min-width : 1024px){
+
+    .logo-bar__content h3 {
+      width: auto;
+      text-align: center;
+    }
+
+    .logo-bar__content p {
+      display:block;
+    }
+
+    .logo-bar__content__marcas{
+      width: 70%;
+    }
+    
+    .logo-bar__content__marcas li {
+      padding: 0rem;
+    }
+  }

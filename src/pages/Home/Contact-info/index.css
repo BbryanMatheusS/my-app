@@ -1,0 +1,27 @@
+.contact-info {
+  background-color: #ee0e7d;
+  
+}
+
+.contact-info__content {
+  box-sizing: border-box; 
+  color: white;
+  padding: 6rem 1rem 6rem 1rem;
+}
+
+.contact-info__content h2 {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 676px;
+}
+
+.contact-info__content h5 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
+}
+
+.contact-info__content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
