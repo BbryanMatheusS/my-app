@@ -2,6 +2,8 @@ import React from "react";
 import './Reset.css';
 import './Styles.css';
 
+
+
 import Navbar from './Nav-bar';
 import HeroBanner from './Hero-banner';
 import LogoBar from './Logo-bar';
