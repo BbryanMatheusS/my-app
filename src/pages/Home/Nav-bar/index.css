@@ -70,3 +70,40 @@
     order: 0;
   } 
 }
+
+
+
+.popup{
+  background-color: white;
+  z-index: 2;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 40vw;   
+  border: 2px solid black;
+  margin: auto;
+}
+
+.popup__head{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 10px 15px;
+  border: 1px solid black;
+}
+
+.popup__head h1 {
+  font-size: 2rem;
+}
+
+.popup__body {
+  padding: 1rem;
+}
+
+.popup__body h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.popup__body p {
+  margin: 20px 5px;
+}
