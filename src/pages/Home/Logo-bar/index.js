@@ -11,19 +11,19 @@ import thebar from '../../../assets/img/logo-thebar.png';
 
 
 const LogoBar = () => {
-    return (
-        <section className="logo-bar">
-          <div className="logo-bar__content content">
-            <h3>Nosssas principais lojas vtex</h3>
-            <p><HiOutlineArrowNarrowRight/></p>
-            <ul className='logo-bar__content__marcas'>
-              <li><img src={brastemp} alt="" /></li>
-              <li><img src={compracerta} alt="" /></li>
-              <li><img src={consul} alt="" /></li>
-              <li><img src={thebar} alt="" /></li>
-            </ul>
-          </div>
-        </section>
-    )
+  return (
+    <section className="logo-bar">
+      <div className="logo-bar__content content">
+        <h3>Nosssas principais lojas vtex</h3>
+        <p><HiOutlineArrowNarrowRight /></p>
+        <ul className='logo-bar__content__marcas'>
+          <li><a href="https://www.brastemp.com.br/" target="_blank" rel="noreferrer"><img src={brastemp} alt="" /></a></li>
+          <li><a href="https://www.compracerta.com.br/" target="_blank" rel="noreferrer"><img src={compracerta} alt="" /></a></li>
+          <li><a href="https://loja.consul.com.br/" target="_blank" rel="noreferrer"><img src={consul} alt="" /></a></li>
+          <li><a href="https://br.thebar.com/" target="_blank" rel="noreferrer"><img src={thebar} alt="" /></a></li>
+        </ul>
+      </div>
+    </section>
+  )
 }
 export default LogoBar;

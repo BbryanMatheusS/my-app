@@ -12,11 +12,11 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer__content content">
-                <img src={logo} alt="WPP Company Logo" />
+                <a href="https://www.wpp.com/" target="_blank"><img src={logo} alt="WPP Company Logo" /></a>
                 <ul>
-                <li><img src={facebook} alt="Facebook" /></li>
-                <li><img src={insta} alt="instagram" /></li>
-                <li><img src={linkedin} alt="linkedin" /></li>
+                <li><a href="https://www.facebook.com/agencia.jussi" target="_blank"><img src={facebook} alt="Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/jussi/" target="_blank"><img src={insta} alt="instagram" /></a></li>
+                <li><a href="https://www.linkedin.com/company/agencia-jussi/" target="_blank"><img src={linkedin} alt="linkedin" /></a></li>
                 </ul>
             </div>
         </footer>

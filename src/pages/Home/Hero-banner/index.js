@@ -14,21 +14,21 @@ const HeroBanner = () => {
             <div className="hero-banner__conteudo__text">
               <h1>Criamos lojas que vendem mais.</h1>
               <p>A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?</p>
-              <button>Veja nossa soluçoes</button>
+              <a href="#" target="_blank"><button>Veja nossa soluçoes</button></a>
             </div>
             <div className="hero-banner__produtos">
               
               <div className="hero-banner__produtos__produto" id='produto1'>
                 <img src={geladeira} alt="Geladeira" />
-                <button>Mais Detalhes</button>
+                <a href="#" target="_blank"><button>Mais Detalhes</button></a>
               </div>
               <div className="hero-banner__produtos__produto" id='produto2'>
                 <img src={batedeira} alt="Batedeira" />
-                <button>Comprar em 12x</button>
+                <a href="#" target="_blank"><button>Comprar em 12x</button></a>
               </div>
               <div className="hero-banner__produtos__produto" id='produto3'>
                 <img src={bebida} alt="Bebida" />
-                <button>Adicionar à sacola</button>
+                <a href="#" target="_blank"><button>Adicionar à sacola</button></a>
               </div>
             </div>
           </div>

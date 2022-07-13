@@ -22,11 +22,17 @@
 
 .hero-banner__conteudo__text button {
   background-color: #03ffa5;
-  display: block;
+  display: inline-block;
   width: 200px;
   height: 48px;
   border-radius: 5px;
   margin: auto;
+  cursor: pointer;
+}
+.hero-banner__conteudo__text button:hover{
+  transition: 0.5s;
+  background-color: rgba(128, 128, 128, 0.275);
+  
 }
 
 .hero-banner__produtos {
@@ -57,6 +63,13 @@
   font-weight: 500;
   padding: 1rem;
   align-self: baseline;
+  cursor: pointer;
+}
+
+.hero-banner__produtos__produto button:hover{
+  transition: 0.5s;
+  background-color: #ee0e7e3a;
+  
 }
 
 @media (min-width: 1024px) {

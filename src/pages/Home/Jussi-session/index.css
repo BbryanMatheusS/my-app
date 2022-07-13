@@ -30,6 +30,11 @@
   padding: 1rem;
   border-radius: 0.5rem;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.jussi-session button:hover{
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.151);
 }
 
 .jussi-session__conteudo__text p {

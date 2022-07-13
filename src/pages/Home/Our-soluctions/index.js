@@ -9,7 +9,7 @@ import imagem from '../../../assets/img/image.png';
 
 const OurSoluctions = () => {
     return(
-        <section className="our-soluctions">
+        <section id="Our-soluctions" className="our-soluctions">
           <div className="our-soluctions__content content">
             <div className="our-soluctions__content__produtos">
               <h2>//Nossas Soluções</h2>

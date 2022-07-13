@@ -3,6 +3,7 @@ import './index.css';
 
 import { GoSearch } from 'react-icons/go';
 import { CgShoppingCart } from 'react-icons/cg';
+import {GrClose} from 'react-icons/gr';
 
 import logojussi from '../../../assets/img/logoJussi.png';
 import api from "../../../services/api";
@@ -64,12 +65,12 @@ const Navbar = ({DataPokemon}) => {
   console.log(Pesquisa)
 
   return (
-    <header className="nav-bar">
+    <header id="Nav-bar" className="nav-bar">
       <div className="nav-bar__content content">
         <ul className='nav-bar__content_logo'>
           <li><img src={logojussi} alt="" /></li>
-          <li>Nossas Soluçoes</li>
-          <li>Conheça  Jussi</li>
+          <li><a href="#Our-soluctions">Nossas soluções</a></li>
+          <li><a href="#Jussi-session">Conheça a Jüssi</a></li>
         </ul>
         <ul className='nav-bar__content_search'>
           <li>
@@ -89,7 +90,7 @@ const Navbar = ({DataPokemon}) => {
           <h1>
             {DadosDoPokemon?DadosDoPokemon.name:"Nome do pokemon"}
           </h1>
-          <button onClick={closePopup}>close</button>
+          <button onClick={closePopup}><GrClose/></button>
         </div>
         <div className="popup__body">
           <div className="popup_imagem-dados">

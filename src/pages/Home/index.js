@@ -1,4 +1,4 @@
-import React ,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import './Reset.css';
 import './Styles.css';
 import api from "../../services/api";
@@ -18,30 +18,51 @@ import Footer from './Footer';
 const Home = () => {
 
     const [DataPokemon, setDataPokemons] = useState([]);
-    
 
-    useEffect (() => {
+
+    useEffect(() => {
 
         const pokemons = async () => {
-            const {data} = await api.get("/pokedex/2")
+            const { data } = await api.get("/pokedex/2")
             const dados = data.pokemon_entries
 
             setDataPokemons(...DataPokemon, dados.map(dado => (dado.pokemon_species.name)))
         };
         pokemons()
-    },[]);
+    }, []);
 
     // console.log(DataPokemon)
 
-   
+
+
+    const menuItems = document.querySelectorAll('#Nav-bar a[href^="#"]');
+
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', scrollToIdOnClick);
+    })
+    function scrollToIdOnClick(event) {
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute('href');
+        const to = document.querySelector(id).offsetTop;
+
+
+        window.scroll({
+            top: to - 80,
+            behavior: "smooth",
+        })
+    }
+
+
 
     return (
         <div className="App">
 
-            <Navbar DataPokemon= {DataPokemon}/>
-            
+            <Navbar DataPokemon={DataPokemon} />
+
             <HeroBanner />
-            
+
             <LogoBar />
 
             <OurSoluctions />
@@ -51,7 +72,7 @@ const Home = () => {
             <ContactInfo />
 
             <Newletter />
-            
+
             <Footer />
 
         </div>
