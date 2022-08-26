@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.8dd4342d.css",
+    "main.css": "/my-app/static/css/main.8d30430e.css",
     "main.js": "/my-app/static/js/main.6ae866a0.js",
     "static/media/image-jussi.png": "/my-app/static/media/image-jussi.8906484ce8557e23ef2e.png",
     "static/media/batedeira.png": "/my-app/static/media/batedeira.3e1b738df7bc9a3685b4.png",
     "static/media/bebida.png": "/my-app/static/media/bebida.321e3b316f3b5a1b5701.png",
     "static/media/geladeira.png": "/my-app/static/media/geladeira.d11d5608d49e2f7d6594.png",
     "index.html": "/my-app/index.html",
-    "main.8dd4342d.css.map": "/my-app/static/css/main.8dd4342d.css.map",
+    "main.8d30430e.css.map": "/my-app/static/css/main.8d30430e.css.map",
     "main.6ae866a0.js.map": "/my-app/static/js/main.6ae866a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dd4342d.css",
+    "static/css/main.8d30430e.css",
     "static/js/main.6ae866a0.js"
   ]
 }
